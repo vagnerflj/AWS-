@@ -261,3 +261,10 @@ Aqui estão algumas características principais do ELB:
 **Monitoramento e Auditoria:** O ELB integra-se com o Amazon CloudWatch e o AWS CloudTrail para monitorar o desempenho de suas aplicações e registrar as ações realizadas no seu balanceador de carga.
 
 Resumindo, o Elastic Load Balancing é uma ferramenta essencial para a distribuição eficiente de tráfego, melhorando a disponibilidade e a tolerância a falhas das suas aplicações na AWS.
+
+## Tipos de volumes **EBS**
+
+**gp3** & **gp2** SSD Com capacidade de 1GB - 16TB.
+
+**io2 Block Express** SSD com capacidade de 4GB - 64TB.
+
