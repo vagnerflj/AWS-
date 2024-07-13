@@ -267,4 +267,56 @@ Resumindo, o Elastic Load Balancing é uma ferramenta essencial para a distribui
 **gp3** & **gp2** SSD Com capacidade de 1GB - 16TB.
 
 **io2 Block Express** SSD com capacidade de 4GB - 64TB.
+Leitura Complementar - O que é AWS Artifact
+O QUE É O AWS ARTIFACT?
+
+O AWS Artifact, disponível no console, é um portal de autoatendimento para recuperação de artefatos de auditoria que oferece aos clientes acesso sob demanda à documentação de conformidade e aos acordos da AWS.
+
+Você pode usar os relatórios do AWS Artifact para fazer download de documentos de segurança e conformidade, como os relatórios de certificações ISO, Payment Card Industry (PCI – Setor de cartões de pagamento) e Organization Control (SOC – Controles de sistema e organização).
+
+Você pode usar o AWS Artifact Agreements para examinar, aceitar e acompanhar o status de acordos da AWS como o Business Associate Addendum (BAA – Adendo de associado comercial).
+
+
+
+QUEM TEM ACESSO AO AWS ARTIFACT?
+
+Todas as contas da AWS têm acesso ao AWS Artifact. Os usuários raiz e do IAM com permissões de administrador podem fazer o download de todos os artefatos de auditoria disponíveis na conta concordando com os termos e condições associados.
+
+Será necessário conceder aos usuários do IAM permissões de acesso não administrativas para o AWS Artifact usando as permissões do IAM. Com isso, você poderá conceder a um usuário o acesso ao AWS Artifact e restringir o acesso a outros serviços e recursos da conta da AWS. Para obter informações sobre como conceder acesso usando o IAM, consulte esse tópico de ajuda na documentação do AWS Artifact.
+
+
+
+COMO PERMITO QUE OUTROS USUÁRIOS ACESSEM O AWS ARTIFACT AGREEMENTS?
+
+Sua conta administrativa tem todas as permissões necessárias para usar o AWS Artifact. No entanto, documentos e acordos diferentes podem exigir a delegação de permissões distintas para diversos usuários. Você pode delegar permissões usando as políticas do IAM.
+
+
+
+O QUE É UM ARTEFATO DE AUDITORIA?
+
+Um artefato de auditoria é um elemento de evidência que demonstra que uma organização segue um processo documentado ou cumpre um requisito específico. Os artefatos de auditoria são coletados e arquivados ao longo do ciclo de vida de desenvolvimento de um sistema e servem como evidência em auditorias e avaliações internas e/ou externas.
+
+No momento, o AWS Artifact oferece aos clientes relatórios e acordos que podem ser usados como artefatos de auditoria.
+
+
+
+COMO FAÇO PARA COMPARTILHAR ARTEFATOS DE AUDITORIA COM OS AUDITORES?
+
+Muitas vezes, será necessário que os auditores tenham acesso aos relatórios de conformidade da AWS. Você pode fazer isso facilmente criando credenciais de usuário do IAM específicas para cada auditor, configurando-as para limitar o acesso aos relatórios relevantes para a auditoria conduzida pelo auditor. Para obter mais informações, veja este tópico de ajuda na documentação do AWS Artifact.
+
+
+
+
+
+COMO POSSO USAR ESSES ARTEFATOS PARA CUMPRIR REQUISITOS DE AUDITORIA?
+
+Você pode fornecer os artefatos de auditoria da AWS aos auditores ou reguladores como evidência dos controles de segurança da AWS.
+
+Além disso, é possível usar a orientação sobre responsabilidades fornecida por alguns artefatos de auditoria da AWS para projetar a arquitetura de nuvem. Essa orientação ajuda a determinar os controles de segurança adicionais que devem ser implantados para apoiar casos de uso específicos do sistema.
+
+
+
+EXISTE UM LIMITE PARA O NÚMERO DE ARTEFATOS QUE POSSO OBTER POR DOWNLOAD?
+
+Não. Você pode acessar e fazer o download de todos os artefatos a qualquer momento, tantas vezes quanto precisar.
 
