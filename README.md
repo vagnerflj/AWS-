@@ -320,3 +320,112 @@ EXISTE UM LIMITE PARA O NÚMERO DE ARTEFATOS QUE POSSO OBTER POR DOWNLOAD?
 
 Não. Você pode acessar e fazer o download de todos os artefatos a qualquer momento, tantas vezes quanto precisar.
 
+Sobre AWS CloudFront
+O Amazon CloudFront é um serviço de rede de entrega de conteúdo (CDN) rápido e altamente seguro oferecido pela Amazon Web Services (AWS). Ele distribui dados, vídeos, aplicativos e APIs para os espectadores dos usuários com baixa latência e altas velocidades de transferência.
+
+Aqui estão algumas características notáveis e benefícios do Amazon CloudFront:
+
+
+
+Desempenho melhorado: O CloudFront melhora o desempenho dos aplicativos, acelerando a entrega de conteúdo para os usuários finais. Isso é feito através do uso de uma rede global de pontos de presença (PoPs) que roteiam o conteúdo para o usuário a partir do local mais próximo.
+
+Segurança robusta: O CloudFront oferece uma segurança robusta com integração ao AWS Shield, AWS Web Application Firewall (WAF) e Route 53 para ajudar a proteger seu aplicativo contra vários tipos de ataques. Ele também suporta a entrega segura de conteúdo através de HTTPS e integra-se ao AWS Certificate Manager para facilitar o gerenciamento de certificados SSL/TLS.
+
+Escalabilidade: Como parte da AWS, o CloudFront pode escalar automaticamente para lidar com tráfego alto sem necessidade de intervenção manual.
+
+Personalização: Com o CloudFront, você pode personalizar e otimizar o desempenho da entrega de conteúdo com base nas necessidades específicas do seu aplicativo.
+
+Integração com a AWS: O CloudFront está profundamente integrado com outros serviços da AWS, como o S3, EC2, Elastic Load Balancer (ELB) e Route 53, o que facilita a entrega de conteúdo de várias fontes.
+
+Custo Efetivo: O CloudFront usa um modelo de preços pay-as-you-go, onde você paga apenas pelo que usa. Além disso, há opções para economizar dinheiro ao se comprometer com um determinado nível de uso.
+
+Em resumo, o Amazon CloudFront é uma solução de CDN segura, escalável e de alto desempenho que melhora a experiência do usuário, acelerando a entrega de conteúdo, enquanto protege seus aplicativos contra ameaças.
+S3 Transfer Acceleration
+O Amazon S3 Transfer Acceleration é um recurso do Amazon S3 que permite a transferência rápida e segura de arquivos por longas distâncias entre o cliente e um bucket do S3. Este serviço utiliza a rede global da Amazon CloudFront para acelerar as transferências de upload e download para o S3.
+
+Aqui estão algumas características importantes e benefícios do S3 Transfer Acceleration:
+
+
+
+Velocidade aprimorada: Este serviço é especialmente útil quando se precisa transferir grandes quantidades de dados de forma rápida e eficiente de um lugar distante para um bucket do S3.
+
+Facilidade de uso: Ativar a Transfer Acceleration é tão simples quanto marcar uma caixa na configuração do bucket do S3. Não é necessário alterar o código da aplicação.
+
+Utiliza a Rede da Amazon CloudFront: O serviço usa a infraestrutura de borda otimizada para latência da Amazon CloudFront, que tem pontos de presença (PoPs) em todo o mundo para rotear dados pela rede da AWS.
+
+Custo Eficiente: Com a Transfer Acceleration, você paga apenas pelo que usa. No entanto, é importante notar que este serviço é cobrado além das taxas padrão de solicitação e armazenamento do S3.
+
+Segurança: Assim como o S3, a Transfer Acceleration suporta a transferência de dados por HTTPS, oferecendo o mesmo nível de segurança dos dados em trânsito.
+
+Em resumo, o S3 Transfer Acceleration é uma solução eficiente quando se precisa transferir grandes volumes de dados por longas distâncias. Ele maximiza a velocidade de transferência de dados, melhorando o desempenho e a eficiência das operações de negócios que envolvem o S3.
+
+AWS Global Accelerator
+O AWS Global Accelerator é um serviço que melhora a disponibilidade e o desempenho de suas aplicações para usuários em todo o mundo. Ele faz isso usando a rede global altamente disponível da AWS e redirecionando o tráfego de usuários para a aplicação mais próxima em termos de latência. Isso resulta em uma melhoria significativa na experiência do usuário.
+
+Aqui estão algumas características notáveis e benefícios do AWS Global Accelerator:
+
+
+
+Desempenho aprimorado: O Global Accelerator melhora a velocidade de conexão e a latência para as aplicações da AWS, tornando-as mais rápidas e responsivas para os usuários, não importa onde eles estejam localizados.
+
+Alta Disponibilidade: Utilizando a rede global da AWS, o Global Accelerator oferece uma alta disponibilidade, direcionando os usuários para a instância mais saudável da aplicação.
+
+Fácil de configurar: Basta escolher os recursos da AWS que deseja acelerar, e o AWS Global Accelerator cuida do restante.
+
+Segurança aprimorada: Com o Global Accelerator, você cria um único ponto de entrada para as suas aplicações, o que pode ser útil para configurações de segurança e firewall.
+
+Escalabilidade: O serviço se adapta automaticamente às mudanças no tráfego de aplicação, o que o torna útil para cenários de alto tráfego ou para aplicações com padrões de tráfego imprevisíveis.
+
+Em resumo, o AWS Global Accelerator é uma solução útil para melhorar a velocidade, a disponibilidade e a segurança de aplicações na AWS, proporcionando uma experiência de usuário mais suave e agradável.
+
+
+Amazon Elastic Container Service (Amazon ECS)
+O Amazon Elastic Container Service (ECS) é um serviço de gerenciamento de contêineres altamente escalável e de alto desempenho que suporta contêineres Docker e permite que você execute e gerencie facilmente aplicações em contêiner na Amazon Web Services (AWS).
+
+Aqui estão algumas das principais características e funcionalidades do Amazon ECS:
+
+
+
+Integração com a AWS: O ECS se integra perfeitamente com outros serviços da AWS, como o Amazon RDS, o Amazon DynamoDB, o AWS Lambda, o Amazon API Gateway, entre outros, facilitando a criação de aplicações com arquiteturas complexas.
+
+Gerenciamento de Contêineres: O Amazon ECS gerencia o ciclo de vida dos contêineres, incluindo provisionamento, implantação, monitoramento de saúde, escala e desprovisionamento.
+
+Escalabilidade: Com o Amazon ECS, você pode dimensionar suas aplicações de forma rápida e fácil para lidar com demandas de trabalho variáveis.
+
+Segurança: As tarefas do ECS podem usar as funções do IAM para obter um controle de acesso fino aos recursos da AWS. Além disso, você pode executar suas tarefas em uma Amazon Virtual Private Cloud (VPC) para isolar suas aplicações.
+
+Serviço Gerenciado: Como um serviço gerenciado, o Amazon ECS elimina a necessidade de instalar, operar e dimensionar a própria infraestrutura de gerenciamento de contêineres.
+
+Monitoramento e Logs: O ECS oferece integração nativa com o Amazon CloudWatch e o Amazon CloudTrail, permitindo que você visualize métricas de utilização de recursos, acompanhe as chamadas de API e obtenha informações detalhadas sobre a saúde de suas aplicações.
+
+Orquestração de Contêineres: O Amazon ECS permite a orquestração de contêineres complexos através de serviços e tarefas. Você pode especificar o número de contêineres para cada tarefa e definir regras para como eles devem ser posicionados em um cluster.
+
+Em resumo, o Amazon ECS é uma ferramenta poderosa e escalável para a execução de aplicações em contêineres, oferecendo integração com a AWS e a flexibilidade de usar vários modelos de programação.
+
+
+
+
+Amazon Elastic Kubernetes Service (Amazon EKS)
+O Amazon Elastic Kubernetes Service (EKS) é um serviço de gerenciamento de contêineres que facilita a execução, escalabilidade e monitoramento de aplicações baseadas em contêineres usando o Kubernetes, um sistema de orquestração de contêineres de código aberto, na plataforma AWS.
+
+Aqui estão algumas das principais características e funcionalidades do Amazon EKS:
+
+
+
+Gerenciamento de Kubernetes: O EKS remove a complexidade de configurar e operar um ambiente de Kubernetes, permitindo que você se concentre na construção de aplicações.
+
+Compatibilidade com Kubernetes: O EKS é totalmente compatível com aplicações que rodam em qualquer ambiente padrão do Kubernetes, o que significa que você pode migrar qualquer aplicação padrão Kubernetes para o EKS sem precisar de qualquer modificação.
+
+Integração com a AWS: O Amazon EKS é profundamente integrado com serviços da AWS, como Amazon RDS, AWS Lambda, Amazon S3 e Elastic Load Balancers, fornecendo uma experiência de usuário consistente em todo o ecossistema AWS.
+
+Segurança: O EKS executa automaticamente várias tarefas de segurança, como a rotação periódica das chaves de criptografia usadas para proteger os dados armazenados em seus clusters.
+
+Escalabilidade: Com o EKS, você pode escalonar suas aplicações para lidar com demandas de tráfego pico e para baixo, dependendo das necessidades da aplicação.
+
+Monitoramento e Diagnóstico: O EKS se integra com o AWS CloudTrail e Amazon CloudWatch, fornecendo monitoramento detalhado, log de eventos e diagnóstico de suas aplicações e clusters de Kubernetes.
+
+Serviço Gerenciado: O Amazon EKS elimina a necessidade de instalar, operar e dimensionar a infraestrutura de gerenciamento do Kubernetes, simplificando a operação e manutenção de clusters de Kubernetes.
+
+Em resumo, o Amazon EKS oferece uma maneira poderosa, segura e escalável de executar aplicações baseadas em contêineres na AWS, enquanto aproveita as vantagens do Kubernetes como um padrão de facto para a orquestração de contêineres.
+
+
