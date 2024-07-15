@@ -158,9 +158,7 @@ Em resumo, os Security Groups são uma ferramenta crucial para gerenciar a segur
 ## Resumo - EBS
 O Amazon Elastic Block Store (EBS) é um serviço de armazenamento de alto desempenho oferecido pela AWS para uso com Amazon Elastic Compute Cloud (EC2). Ele foi projetado para aplicativos que exigem armazenamento de baixa latência para ler e escrever dados em blocos.
 
-Aqui estão algumas características principais do EBS:
-
-
+**Aqui estão algumas características principais do EBS:**
 
 **Desempenho de Armazenamento:** EBS fornece armazenamento em bloco de alto desempenho que pode ser anexado a uma instância EC2. Os volumes EBS são otimizados para cargas de trabalho que exigem operações de E/S de baixa latência, como bancos de dados e aplicativos que exigem muita E/S.
 
@@ -176,14 +174,11 @@ Aqui estão algumas características principais do EBS:
 
 Em resumo, o Amazon EBS é uma solução de armazenamento em bloco de alto desempenho que é fundamental para muitas aplicações em execução na AWS devido à sua durabilidade, flexibilidade e integração com a AWS.
 
-Resumo - EFS
-O Amazon Elastic File System (EFS) é um serviço de armazenamento de arquivos totalmente gerenciado que facilita a configuração e o dimensionamento de sistemas de arquivos em nuvem na AWS. O EFS foi projetado para ser altamente disponível, durável e seguro, e pode ser usado com uma ampla gama de serviços da AWS e aplicações on-premise.
+## Resumo - EFS ##
 
+O **Amazon Elastic File System (EFS)** é um serviço de armazenamento de arquivos totalmente gerenciado que facilita a configuração e o dimensionamento de sistemas de arquivos em nuvem na AWS. O EFS foi projetado para ser altamente disponível, durável e seguro, e pode ser usado com uma ampla gama de serviços da AWS e aplicações on-premise.
 
-
-Aqui estão alguns pontos-chave sobre o Amazon EFS:
-
-
+Aqui estão alguns pontos-chave sobre o ** Amazon EFS:**
 
 **Escalabilidade:** O EFS é projetado para escalar automaticamente para acomodar o crescimento dos dados, de alguns gigabytes a petabytes, sem a necessidade de provisionar o armazenamento.
 
@@ -199,7 +194,7 @@ Aqui estão alguns pontos-chave sobre o Amazon EFS:
 
 Resumindo, o Amazon EFS é uma solução de armazenamento de arquivos escalável, de alta disponibilidade e segura, que facilita o compartilhamento de arquivos entre instâncias EC2 e outros serviços AWS.
 
-Resumo - FSx
+## Resumo - FSx ##
 O Amazon FSx é um serviço de armazenamento de arquivos totalmente gerenciado da AWS que facilita o lançamento e a execução de sistemas de arquivos de terceiros. O FSx fornece o rico conjunto de recursos e a rápida performance que esses tipos de aplicativos precisam, e atualmente suporta dois sistemas de arquivos: Windows File Server para aplicações baseadas em Windows, e Lustre para cargas de trabalho de computação intensiva.
 
 Aqui estão alguns pontos chave sobre o Amazon FSx:
@@ -262,259 +257,223 @@ Aqui estão algumas características principais do ELB:
 
 Resumindo, o Elastic Load Balancing é uma ferramenta essencial para a distribuição eficiente de tráfego, melhorando a disponibilidade e a tolerância a falhas das suas aplicações na AWS.
 
-## Tipos de volumes **EBS**
+## Leitura Complementar - O que é AWS Artifact ##
 
-**gp3** & **gp2** SSD Com capacidade de 1GB - 16TB.
-
-**io2 Block Express** SSD com capacidade de 4GB - 64TB.
-Leitura Complementar - O que é AWS Artifact
-O QUE É O AWS ARTIFACT?
-
+**O QUE É O AWS ARTIFACT?**
 O AWS Artifact, disponível no console, é um portal de autoatendimento para recuperação de artefatos de auditoria que oferece aos clientes acesso sob demanda à documentação de conformidade e aos acordos da AWS.
-
 Você pode usar os relatórios do AWS Artifact para fazer download de documentos de segurança e conformidade, como os relatórios de certificações ISO, Payment Card Industry (PCI – Setor de cartões de pagamento) e Organization Control (SOC – Controles de sistema e organização).
-
 Você pode usar o AWS Artifact Agreements para examinar, aceitar e acompanhar o status de acordos da AWS como o Business Associate Addendum (BAA – Adendo de associado comercial).
 
-
-
-QUEM TEM ACESSO AO AWS ARTIFACT?
-
+**QUEM TEM ACESSO AO AWS ARTIFACT?**
 Todas as contas da AWS têm acesso ao AWS Artifact. Os usuários raiz e do IAM com permissões de administrador podem fazer o download de todos os artefatos de auditoria disponíveis na conta concordando com os termos e condições associados.
+Será necessário conceder aos usuários do IAM permissões de acesso não administrativas para o AWS Artifact usando as permissões do IAM. Com isso, você poderá conceder a um usuário o acesso ao AWS Artifact e restringir o acesso a outros serviços e recursos da conta da AWS. 
+Para obter informações sobre como conceder acesso usando o IAM, consulte esse tópico de ajuda na documentação do AWS Artifact.
 
-Será necessário conceder aos usuários do IAM permissões de acesso não administrativas para o AWS Artifact usando as permissões do IAM. Com isso, você poderá conceder a um usuário o acesso ao AWS Artifact e restringir o acesso a outros serviços e recursos da conta da AWS. Para obter informações sobre como conceder acesso usando o IAM, consulte esse tópico de ajuda na documentação do AWS Artifact.
+**COMO PERMITO QUE OUTROS USUÁRIOS ACESSEM O AWS ARTIFACT AGREEMENTS?**
+Sua conta administrativa tem todas as permissões necessárias para usar o AWS Artifact.
+No entanto, documentos e acordos diferentes podem exigir a delegação de permissões distintas para diversos usuários. 
+Você pode delegar permissões usando as políticas do IAM.
 
-
-
-COMO PERMITO QUE OUTROS USUÁRIOS ACESSEM O AWS ARTIFACT AGREEMENTS?
-
-Sua conta administrativa tem todas as permissões necessárias para usar o AWS Artifact. No entanto, documentos e acordos diferentes podem exigir a delegação de permissões distintas para diversos usuários. Você pode delegar permissões usando as políticas do IAM.
-
-
-
-O QUE É UM ARTEFATO DE AUDITORIA?
-
-Um artefato de auditoria é um elemento de evidência que demonstra que uma organização segue um processo documentado ou cumpre um requisito específico. Os artefatos de auditoria são coletados e arquivados ao longo do ciclo de vida de desenvolvimento de um sistema e servem como evidência em auditorias e avaliações internas e/ou externas.
-
+**O QUE É UM ARTEFATO DE AUDITORIA?**
+Um artefato de auditoria é um elemento de evidência que demonstra que uma organização segue um processo documentado ou cumpre um requisito específico. 
+Os artefatos de auditoria são coletados e arquivados ao longo do ciclo de vida de desenvolvimento de um sistema e servem como evidência em auditorias e avaliações internas e/ou externas.
 No momento, o AWS Artifact oferece aos clientes relatórios e acordos que podem ser usados como artefatos de auditoria.
 
+**COMO FAÇO PARA COMPARTILHAR ARTEFATOS DE AUDITORIA COM OS AUDITORES?**
+Muitas vezes, será necessário que os auditores tenham acesso aos relatórios de conformidade da AWS. Você pode fazer isso facilmente criando credenciais de usuário do IAM específicas para cada auditor, configurando-as para limitar o acesso aos relatórios relevantes para a auditoria conduzida pelo auditor. 
+Para obter mais informações, veja este tópico de ajuda na documentação do AWS Artifact.
 
-
-COMO FAÇO PARA COMPARTILHAR ARTEFATOS DE AUDITORIA COM OS AUDITORES?
-
-Muitas vezes, será necessário que os auditores tenham acesso aos relatórios de conformidade da AWS. Você pode fazer isso facilmente criando credenciais de usuário do IAM específicas para cada auditor, configurando-as para limitar o acesso aos relatórios relevantes para a auditoria conduzida pelo auditor. Para obter mais informações, veja este tópico de ajuda na documentação do AWS Artifact.
-
-
-
-
-
-COMO POSSO USAR ESSES ARTEFATOS PARA CUMPRIR REQUISITOS DE AUDITORIA?
-
+**COMO POSSO USAR ESSES ARTEFATOS PARA CUMPRIR REQUISITOS DE AUDITORIA?**
 Você pode fornecer os artefatos de auditoria da AWS aos auditores ou reguladores como evidência dos controles de segurança da AWS.
-
 Além disso, é possível usar a orientação sobre responsabilidades fornecida por alguns artefatos de auditoria da AWS para projetar a arquitetura de nuvem. Essa orientação ajuda a determinar os controles de segurança adicionais que devem ser implantados para apoiar casos de uso específicos do sistema.
 
-
-
-EXISTE UM LIMITE PARA O NÚMERO DE ARTEFATOS QUE POSSO OBTER POR DOWNLOAD?
-
+**EXISTE UM LIMITE PARA O NÚMERO DE ARTEFATOS QUE POSSO OBTER POR DOWNLOAD?**
 Não. Você pode acessar e fazer o download de todos os artefatos a qualquer momento, tantas vezes quanto precisar.
 
-Sobre AWS CloudFront
+## Sobre AWS CloudFront ## 
 O Amazon CloudFront é um serviço de rede de entrega de conteúdo (CDN) rápido e altamente seguro oferecido pela Amazon Web Services (AWS). Ele distribui dados, vídeos, aplicativos e APIs para os espectadores dos usuários com baixa latência e altas velocidades de transferência.
 
 Aqui estão algumas características notáveis e benefícios do Amazon CloudFront:
 
 
+**Desempenho melhorado:** O CloudFront melhora o desempenho dos aplicativos, acelerando a entrega de conteúdo para os usuários finais. Isso é feito através do uso de uma rede global de pontos de presença (PoPs) que roteiam o conteúdo para o usuário a partir do local mais próximo.
 
-Desempenho melhorado: O CloudFront melhora o desempenho dos aplicativos, acelerando a entrega de conteúdo para os usuários finais. Isso é feito através do uso de uma rede global de pontos de presença (PoPs) que roteiam o conteúdo para o usuário a partir do local mais próximo.
+**Segurança robusta:** O CloudFront oferece uma segurança robusta com integração ao AWS Shield, AWS Web Application Firewall (WAF) e Route 53 para ajudar a proteger seu aplicativo contra vários tipos de ataques. Ele também suporta a entrega segura de conteúdo através de HTTPS e integra-se ao AWS Certificate Manager para facilitar o gerenciamento de certificados SSL/TLS.
 
-Segurança robusta: O CloudFront oferece uma segurança robusta com integração ao AWS Shield, AWS Web Application Firewall (WAF) e Route 53 para ajudar a proteger seu aplicativo contra vários tipos de ataques. Ele também suporta a entrega segura de conteúdo através de HTTPS e integra-se ao AWS Certificate Manager para facilitar o gerenciamento de certificados SSL/TLS.
+**Escalabilidade:** Como parte da AWS, o CloudFront pode escalar automaticamente para lidar com tráfego alto sem necessidade de intervenção manual.
 
-Escalabilidade: Como parte da AWS, o CloudFront pode escalar automaticamente para lidar com tráfego alto sem necessidade de intervenção manual.
+**Personalização:** Com o CloudFront, você pode personalizar e otimizar o desempenho da entrega de conteúdo com base nas necessidades específicas do seu aplicativo.
 
-Personalização: Com o CloudFront, você pode personalizar e otimizar o desempenho da entrega de conteúdo com base nas necessidades específicas do seu aplicativo.
+**Integração com a AWS:** O CloudFront está profundamente integrado com outros serviços da AWS, como o S3, EC2, Elastic Load Balancer (ELB) e Route 53, o que facilita a entrega de conteúdo de várias fontes.
 
-Integração com a AWS: O CloudFront está profundamente integrado com outros serviços da AWS, como o S3, EC2, Elastic Load Balancer (ELB) e Route 53, o que facilita a entrega de conteúdo de várias fontes.
-
-Custo Efetivo: O CloudFront usa um modelo de preços pay-as-you-go, onde você paga apenas pelo que usa. Além disso, há opções para economizar dinheiro ao se comprometer com um determinado nível de uso.
+**Custo Efetivo:** O CloudFront usa um modelo de preços pay-as-you-go, onde você paga apenas pelo que usa. Além disso, há opções para economizar dinheiro ao se comprometer com um determinado nível de uso.
 
 Em resumo, o Amazon CloudFront é uma solução de CDN segura, escalável e de alto desempenho que melhora a experiência do usuário, acelerando a entrega de conteúdo, enquanto protege seus aplicativos contra ameaças.
-S3 Transfer Acceleration
+
+## S3 Transfer Acceleration ##
 O Amazon S3 Transfer Acceleration é um recurso do Amazon S3 que permite a transferência rápida e segura de arquivos por longas distâncias entre o cliente e um bucket do S3. Este serviço utiliza a rede global da Amazon CloudFront para acelerar as transferências de upload e download para o S3.
 
 Aqui estão algumas características importantes e benefícios do S3 Transfer Acceleration:
 
 
+**Velocidade aprimorada:** Este serviço é especialmente útil quando se precisa transferir grandes quantidades de dados de forma rápida e eficiente de um lugar distante para um bucket do S3.
 
-Velocidade aprimorada: Este serviço é especialmente útil quando se precisa transferir grandes quantidades de dados de forma rápida e eficiente de um lugar distante para um bucket do S3.
+**Facilidade de uso:** Ativar a Transfer Acceleration é tão simples quanto marcar uma caixa na configuração do bucket do S3. Não é necessário alterar o código da aplicação.
 
-Facilidade de uso: Ativar a Transfer Acceleration é tão simples quanto marcar uma caixa na configuração do bucket do S3. Não é necessário alterar o código da aplicação.
+**Utiliza a Rede da Amazon CloudFront:** O serviço usa a infraestrutura de borda otimizada para latência da Amazon CloudFront, que tem pontos de presença (PoPs) em todo o mundo para rotear dados pela rede da AWS.
 
-Utiliza a Rede da Amazon CloudFront: O serviço usa a infraestrutura de borda otimizada para latência da Amazon CloudFront, que tem pontos de presença (PoPs) em todo o mundo para rotear dados pela rede da AWS.
+**Custo Eficiente:** Com a Transfer Acceleration, você paga apenas pelo que usa. No entanto, é importante notar que este serviço é cobrado além das taxas padrão de solicitação e armazenamento do S3.
 
-Custo Eficiente: Com a Transfer Acceleration, você paga apenas pelo que usa. No entanto, é importante notar que este serviço é cobrado além das taxas padrão de solicitação e armazenamento do S3.
-
-Segurança: Assim como o S3, a Transfer Acceleration suporta a transferência de dados por HTTPS, oferecendo o mesmo nível de segurança dos dados em trânsito.
+**Segurança:** Assim como o S3, a Transfer Acceleration suporta a transferência de dados por HTTPS, oferecendo o mesmo nível de segurança dos dados em trânsito.
 
 Em resumo, o S3 Transfer Acceleration é uma solução eficiente quando se precisa transferir grandes volumes de dados por longas distâncias. Ele maximiza a velocidade de transferência de dados, melhorando o desempenho e a eficiência das operações de negócios que envolvem o S3.
 
-AWS Global Accelerator
+## AWS Global Accelerator ##
 O AWS Global Accelerator é um serviço que melhora a disponibilidade e o desempenho de suas aplicações para usuários em todo o mundo. Ele faz isso usando a rede global altamente disponível da AWS e redirecionando o tráfego de usuários para a aplicação mais próxima em termos de latência. Isso resulta em uma melhoria significativa na experiência do usuário.
 
 Aqui estão algumas características notáveis e benefícios do AWS Global Accelerator:
 
 
+**Desempenho aprimorado:** O Global Accelerator melhora a velocidade de conexão e a latência para as aplicações da AWS, tornando-as mais rápidas e responsivas para os usuários, não importa onde eles estejam localizados.
 
-Desempenho aprimorado: O Global Accelerator melhora a velocidade de conexão e a latência para as aplicações da AWS, tornando-as mais rápidas e responsivas para os usuários, não importa onde eles estejam localizados.
+**Alta Disponibilidade:** Utilizando a rede global da AWS, o Global Accelerator oferece uma alta disponibilidade, direcionando os usuários para a instância mais saudável da aplicação.
 
-Alta Disponibilidade: Utilizando a rede global da AWS, o Global Accelerator oferece uma alta disponibilidade, direcionando os usuários para a instância mais saudável da aplicação.
+**Fácil de configurar:** Basta escolher os recursos da AWS que deseja acelerar, e o AWS Global Accelerator cuida do restante.
 
-Fácil de configurar: Basta escolher os recursos da AWS que deseja acelerar, e o AWS Global Accelerator cuida do restante.
+**Segurança aprimorada:** Com o Global Accelerator, você cria um único ponto de entrada para as suas aplicações, o que pode ser útil para configurações de segurança e firewall.
 
-Segurança aprimorada: Com o Global Accelerator, você cria um único ponto de entrada para as suas aplicações, o que pode ser útil para configurações de segurança e firewall.
-
-Escalabilidade: O serviço se adapta automaticamente às mudanças no tráfego de aplicação, o que o torna útil para cenários de alto tráfego ou para aplicações com padrões de tráfego imprevisíveis.
+**Escalabilidade:** O serviço se adapta automaticamente às mudanças no tráfego de aplicação, o que o torna útil para cenários de alto tráfego ou para aplicações com padrões de tráfego imprevisíveis.
 
 Em resumo, o AWS Global Accelerator é uma solução útil para melhorar a velocidade, a disponibilidade e a segurança de aplicações na AWS, proporcionando uma experiência de usuário mais suave e agradável.
 
 
-Amazon Elastic Container Service (Amazon ECS)
+## Amazon Elastic Container Service (Amazon ECS) ##
 O Amazon Elastic Container Service (ECS) é um serviço de gerenciamento de contêineres altamente escalável e de alto desempenho que suporta contêineres Docker e permite que você execute e gerencie facilmente aplicações em contêiner na Amazon Web Services (AWS).
 
 Aqui estão algumas das principais características e funcionalidades do Amazon ECS:
 
 
+**Integração com a AWS:** O ECS se integra perfeitamente com outros serviços da AWS, como o Amazon RDS, o Amazon DynamoDB, o AWS Lambda, o Amazon API Gateway, entre outros, facilitando a criação de aplicações com arquiteturas complexas.
 
-Integração com a AWS: O ECS se integra perfeitamente com outros serviços da AWS, como o Amazon RDS, o Amazon DynamoDB, o AWS Lambda, o Amazon API Gateway, entre outros, facilitando a criação de aplicações com arquiteturas complexas.
+**Gerenciamento de Contêineres:** O Amazon ECS gerencia o ciclo de vida dos contêineres, incluindo provisionamento, implantação, monitoramento de saúde, escala e desprovisionamento.
 
-Gerenciamento de Contêineres: O Amazon ECS gerencia o ciclo de vida dos contêineres, incluindo provisionamento, implantação, monitoramento de saúde, escala e desprovisionamento.
+**Escalabilidade:** Com o Amazon ECS, você pode dimensionar suas aplicações de forma rápida e fácil para lidar com demandas de trabalho variáveis.
 
-Escalabilidade: Com o Amazon ECS, você pode dimensionar suas aplicações de forma rápida e fácil para lidar com demandas de trabalho variáveis.
+**Segurança:** As tarefas do ECS podem usar as funções do IAM para obter um controle de acesso fino aos recursos da AWS. Além disso, você pode executar suas tarefas em uma Amazon Virtual Private Cloud (VPC) para isolar suas aplicações.
 
-Segurança: As tarefas do ECS podem usar as funções do IAM para obter um controle de acesso fino aos recursos da AWS. Além disso, você pode executar suas tarefas em uma Amazon Virtual Private Cloud (VPC) para isolar suas aplicações.
+**Serviço Gerenciado:** Como um serviço gerenciado, o Amazon ECS elimina a necessidade de instalar, operar e dimensionar a própria infraestrutura de gerenciamento de contêineres.
 
-Serviço Gerenciado: Como um serviço gerenciado, o Amazon ECS elimina a necessidade de instalar, operar e dimensionar a própria infraestrutura de gerenciamento de contêineres.
+**Monitoramento e Logs:** O ECS oferece integração nativa com o Amazon CloudWatch e o Amazon CloudTrail, permitindo que você visualize métricas de utilização de recursos, acompanhe as chamadas de API e obtenha informações detalhadas sobre a saúde de suas aplicações.
 
-Monitoramento e Logs: O ECS oferece integração nativa com o Amazon CloudWatch e o Amazon CloudTrail, permitindo que você visualize métricas de utilização de recursos, acompanhe as chamadas de API e obtenha informações detalhadas sobre a saúde de suas aplicações.
-
-Orquestração de Contêineres: O Amazon ECS permite a orquestração de contêineres complexos através de serviços e tarefas. Você pode especificar o número de contêineres para cada tarefa e definir regras para como eles devem ser posicionados em um cluster.
+**Orquestração de Contêineres:** O Amazon ECS permite a orquestração de contêineres complexos através de serviços e tarefas. Você pode especificar o número de contêineres para cada tarefa e definir regras para como eles devem ser posicionados em um cluster.
 
 Em resumo, o Amazon ECS é uma ferramenta poderosa e escalável para a execução de aplicações em contêineres, oferecendo integração com a AWS e a flexibilidade de usar vários modelos de programação.
 
 
 
-
-Amazon Elastic Kubernetes Service (Amazon EKS)
+## Amazon Elastic Kubernetes Service (Amazon EKS) ##
 O Amazon Elastic Kubernetes Service (EKS) é um serviço de gerenciamento de contêineres que facilita a execução, escalabilidade e monitoramento de aplicações baseadas em contêineres usando o Kubernetes, um sistema de orquestração de contêineres de código aberto, na plataforma AWS.
 
 Aqui estão algumas das principais características e funcionalidades do Amazon EKS:
 
 
+**Gerenciamento de Kubernetes:** O EKS remove a complexidade de configurar e operar um ambiente de Kubernetes, permitindo que você se concentre na construção de aplicações.
 
-Gerenciamento de Kubernetes: O EKS remove a complexidade de configurar e operar um ambiente de Kubernetes, permitindo que você se concentre na construção de aplicações.
+**Compatibilidade com Kubernetes:** O EKS é totalmente compatível com aplicações que rodam em qualquer ambiente padrão do Kubernetes, o que significa que você pode migrar qualquer aplicação padrão Kubernetes para o EKS sem precisar de qualquer modificação.
 
-Compatibilidade com Kubernetes: O EKS é totalmente compatível com aplicações que rodam em qualquer ambiente padrão do Kubernetes, o que significa que você pode migrar qualquer aplicação padrão Kubernetes para o EKS sem precisar de qualquer modificação.
+**Integração com a AWS:** O Amazon EKS é profundamente integrado com serviços da AWS, como Amazon RDS, AWS Lambda, Amazon S3 e Elastic Load Balancers, fornecendo uma experiência de usuário consistente em todo o ecossistema AWS.
 
-Integração com a AWS: O Amazon EKS é profundamente integrado com serviços da AWS, como Amazon RDS, AWS Lambda, Amazon S3 e Elastic Load Balancers, fornecendo uma experiência de usuário consistente em todo o ecossistema AWS.
+**Segurança:** O EKS executa automaticamente várias tarefas de segurança, como a rotação periódica das chaves de criptografia usadas para proteger os dados armazenados em seus clusters.
 
-Segurança: O EKS executa automaticamente várias tarefas de segurança, como a rotação periódica das chaves de criptografia usadas para proteger os dados armazenados em seus clusters.
+**Escalabilidade:** Com o EKS, você pode escalonar suas aplicações para lidar com demandas de tráfego pico e para baixo, dependendo das necessidades da aplicação.
 
-Escalabilidade: Com o EKS, você pode escalonar suas aplicações para lidar com demandas de tráfego pico e para baixo, dependendo das necessidades da aplicação.
+**Monitoramento e Diagnóstico:** O EKS se integra com o AWS CloudTrail e Amazon CloudWatch, fornecendo monitoramento detalhado, log de eventos e diagnóstico de suas aplicações e clusters de Kubernetes.
 
-Monitoramento e Diagnóstico: O EKS se integra com o AWS CloudTrail e Amazon CloudWatch, fornecendo monitoramento detalhado, log de eventos e diagnóstico de suas aplicações e clusters de Kubernetes.
-
-Serviço Gerenciado: O Amazon EKS elimina a necessidade de instalar, operar e dimensionar a infraestrutura de gerenciamento do Kubernetes, simplificando a operação e manutenção de clusters de Kubernetes.
+**Serviço Gerenciado:** O Amazon EKS elimina a necessidade de instalar, operar e dimensionar a infraestrutura de gerenciamento do Kubernetes, simplificando a operação e manutenção de clusters de Kubernetes.
 
 Em resumo, o Amazon EKS oferece uma maneira poderosa, segura e escalável de executar aplicações baseadas em contêineres na AWS, enquanto aproveita as vantagens do Kubernetes como um padrão de facto para a orquestração de contêineres.
 
-AWS LightSail
+## AWS LightSail ##
 O Amazon Lightsail é um serviço de computação em nuvem da Amazon Web Services (AWS) que oferece servidores virtuais privados (VPS), armazenamento, bancos de dados e redes balanceamento de carga a um custo acessível. É projetado para simplificar o lançamento e gerenciamento de aplicações na AWS, especialmente para pequenas empresas, desenvolvedores e estudantes que estão começando a usar a nuvem.
 
 Aqui estão algumas das principais características e funcionalidades do Amazon Lightsail:
 
 
+**Instâncias VPS Previsíveis e Acessíveis:** O Lightsail oferece uma variedade de planos de instâncias com preços fixos e previsíveis que incluem computação, armazenamento e transferência de dados, tornando-o uma opção atrativa para pequenos projetos, sites e aplicações.
 
-Instâncias VPS Previsíveis e Acessíveis: O Lightsail oferece uma variedade de planos de instâncias com preços fixos e previsíveis que incluem computação, armazenamento e transferência de dados, tornando-o uma opção atrativa para pequenos projetos, sites e aplicações.
+**Bancos de Dados Gerenciados:** O Lightsail oferece bancos de dados gerenciados que facilitam a configuração, operação e escala de bancos de dados MySQL e PostgreSQL na nuvem.
 
-Bancos de Dados Gerenciados: O Lightsail oferece bancos de dados gerenciados que facilitam a configuração, operação e escala de bancos de dados MySQL e PostgreSQL na nuvem.
+**Gerenciamento Simples de DNS:** Com o Lightsail, você pode gerenciar facilmente os registros DNS do seu domínio diretamente da interface do Lightsail.
 
-Gerenciamento Simples de DNS: Com o Lightsail, você pode gerenciar facilmente os registros DNS do seu domínio diretamente da interface do Lightsail.
+**Balanceamento de Carga:** O Lightsail oferece balanceadores de carga que distribuem o tráfego entre suas instâncias para melhorar a disponibilidade e a tolerância a falhas de suas aplicações.
 
-Balanceamento de Carga: O Lightsail oferece balanceadores de carga que distribuem o tráfego entre suas instâncias para melhorar a disponibilidade e a tolerância a falhas de suas aplicações.
+**Snapshots Automatizados:** O Lightsail permite que você crie snapshots de suas instâncias e bancos de dados para backup, restauração e recuperação de desastres.
 
-Snapshots Automatizados: O Lightsail permite que você crie snapshots de suas instâncias e bancos de dados para backup, restauração e recuperação de desastres.
+**Integração com AWS:** Embora o Lightsail seja projetado para ser um serviço simples e autônomo, ele também permite a integração com outros serviços AWS à medida que suas necessidades de aplicação se tornam mais complexas.
 
-Integração com AWS: Embora o Lightsail seja projetado para ser um serviço simples e autônomo, ele também permite a integração com outros serviços AWS à medida que suas necessidades de aplicação se tornam mais complexas.
+**Rede Privada Virtual (VPC):** Cada instância Lightsail roda em uma VPC, oferecendo uma camada adicional de segurança e permitindo um controle granular sobre a visibilidade de suas instâncias.
 
-Rede Privada Virtual (VPC): Cada instância Lightsail roda em uma VPC, oferecendo uma camada adicional de segurança e permitindo um controle granular sobre a visibilidade de suas instâncias.
-
-Scripts de inicialização e Blueprints: O Lightsail permite que você utilize scripts de inicialização e blueprints para configurar rapidamente novas instâncias com aplicações pré-instaladas.
+**Scripts de inicialização e Blueprints:** O Lightsail permite que você utilize scripts de inicialização e blueprints para configurar rapidamente novas instâncias com aplicações pré-instaladas.
 
 Em suma, o Amazon Lightsail é um serviço ideal para quem está começando com a computação em nuvem, oferecendo um ponto de partida simples e de baixo custo para hospedar aplicações, sites, blogs, e outros projetos na AWS.
 
-AWS Lambda
+## AWS Lambda ##
 O Amazon Web Services (AWS) Lambda é um serviço de computação que executa seu código em resposta a eventos e gerencia automaticamente os recursos computacionais para você, tornando mais fácil a implantação de aplicações que escalam individualmente em resposta a novas informações.
 
 Aqui estão algumas características notáveis do AWS Lambda:
 
 
+**Execução de Código sem Servidor:** O AWS Lambda executa o código em um ambiente computacional de alta disponibilidade, o que significa que você não precisa se preocupar em provisionar, escalar, ou gerenciar quaisquer servidores.
 
-Execução de Código sem Servidor: O AWS Lambda executa o código em um ambiente computacional de alta disponibilidade, o que significa que você não precisa se preocupar em provisionar, escalar, ou gerenciar quaisquer servidores.
+**Resposta a Eventos em Tempo Real:** Você pode executar seu código em resposta a desencadeadores (triggers), como alterações em um bucket do Amazon S3, atualizações em uma tabela do DynamoDB, solicitações HTTP personalizadas ou até mesmo em novos fluxos de dados no Kinesis.
 
-Resposta a Eventos em Tempo Real: Você pode executar seu código em resposta a desencadeadores (triggers), como alterações em um bucket do Amazon S3, atualizações em uma tabela do DynamoDB, solicitações HTTP personalizadas ou até mesmo em novos fluxos de dados no Kinesis.
+**Escalabilidade Automática:** Sua aplicação escala automaticamente com o AWS Lambda. Quando seu código não está sendo executado, você não paga nada. O serviço gerencia toda a capacidade, patching de segurança, monitoramento e registro de logs.
 
-Escalabilidade Automática: Sua aplicação escala automaticamente com o AWS Lambda. Quando seu código não está sendo executado, você não paga nada. O serviço gerencia toda a capacidade, patching de segurança, monitoramento e registro de logs.
+**Personalização de Recursos Computacionais:** Você pode ajustar a quantidade de memória alocada para sua função e o AWS Lambda alocará proporcionalmente a CPU, o disco de E/S e a largura de banda da rede.
 
-Personalização de Recursos Computacionais: Você pode ajustar a quantidade de memória alocada para sua função e o AWS Lambda alocará proporcionalmente a CPU, o disco de E/S e a largura de banda da rede.
+**Programação em Múltiplas Linguagens:** O AWS Lambda suporta código escrito em JavaScript (Node.js), Python, Java (Java 8 & 11), .NET (C#), Go, Ruby e PowerShell. Também oferece um Runtime API que permite o uso de qualquer linguagem de programação adicional para a criação de funções.
 
-Programação em Múltiplas Linguagens: O AWS Lambda suporta código escrito em JavaScript (Node.js), Python, Java (Java 8 & 11), .NET (C#), Go, Ruby e PowerShell. Também oferece um Runtime API que permite o uso de qualquer linguagem de programação adicional para a criação de funções.
+**Integração Profunda com a AWS:** O AWS Lambda está integrado ao ecossistema da AWS, o que significa que ele pode ser acionado diretamente por outros serviços da AWS.
 
-Integração Profunda com a AWS: O AWS Lambda está integrado ao ecossistema da AWS, o que significa que ele pode ser acionado diretamente por outros serviços da AWS.
-
-Modelo de Preço Baseado em Uso: Você paga apenas pelo tempo de computação que consome - não há cobrança quando seu código não está sendo executado.
+**Modelo de Preço Baseado em Uso:** Você paga apenas pelo tempo de computação que consome - não há cobrança quando seu código não está sendo executado.
 
 Resumindo, o AWS Lambda é uma ferramenta de computação eficiente e flexível que permite a execução de código sem a necessidade de gerenciar servidores, proporcionando um modelo de desenvolvimento focado em responder a eventos e construir aplicações orientadas a microserviços.
 
 
-AWS Fargate
+## AWS Fargate ##
 O AWS Fargate é um serviço de computação sem servidor para contêineres que permite executar aplicações sem ter que gerenciar a infraestrutura subjacente. Ele funciona com o Amazon Elastic Container Service (ECS) e o Amazon Elastic Kubernetes Service (EKS), simplificando a tarefa de executar contêineres em escala.
 
 Aqui estão algumas das principais características e funcionalidades do AWS Fargate:
 
 
+**Computação sem Servidor para Contêineres:** Com o AWS Fargate, você não precisa se preocupar com o provisionamento, a configuração e a escalabilidade da infraestrutura de execução dos contêineres. O serviço cuida de todos esses aspectos, liberando você para se concentrar em projetar e construir suas aplicações.
 
-Computação sem Servidor para Contêineres: Com o AWS Fargate, você não precisa se preocupar com o provisionamento, a configuração e a escalabilidade da infraestrutura de execução dos contêineres. O serviço cuida de todos esses aspectos, liberando você para se concentrar em projetar e construir suas aplicações.
+**Integração com ECS e EKS:** O Fargate se integra facilmente com o ECS e o EKS, permitindo que você execute tarefas e trabalhos em contêineres de forma eficiente e escalável.
 
-Integração com ECS e EKS: O Fargate se integra facilmente com o ECS e o EKS, permitindo que você execute tarefas e trabalhos em contêineres de forma eficiente e escalável.
+**Segurança Isolada:** Cada tarefa ou pod que você executa no Fargate tem seu próprio ambiente isolado de computação, rede e armazenamento, o que aumenta a segurança.
 
-Segurança Isolada: Cada tarefa ou pod que você executa no Fargate tem seu próprio ambiente isolado de computação, rede e armazenamento, o que aumenta a segurança.
+**Dimensionamento Flexível:** O Fargate dimensiona automaticamente em resposta à carga de trabalho. Ele pode executar tudo, desde pequenas aplicações de micro-serviços até grandes aplicações de back-end que precisam de muitos recursos.
 
-Dimensionamento Flexível: O Fargate dimensiona automaticamente em resposta à carga de trabalho. Ele pode executar tudo, desde pequenas aplicações de micro-serviços até grandes aplicações de back-end que precisam de muitos recursos.
+**Preços Pay-as-you-go:** Você paga apenas pelos recursos de computação e memória que seus contêineres precisam quando estão rodando, tornando o Fargate uma opção econômica.
 
-Preços Pay-as-you-go: Você paga apenas pelos recursos de computação e memória que seus contêineres precisam quando estão rodando, tornando o Fargate uma opção econômica.
-
-Observabilidade: O Fargate se integra ao AWS CloudWatch e ao AWS X-Ray, proporcionando insights detalhados sobre o desempenho e a saúde de suas aplicações.
+**Observabilidade:** O Fargate se integra ao AWS CloudWatch e ao AWS X-Ray, proporcionando insights detalhados sobre o desempenho e a saúde de suas aplicações.
 
 Resumindo, o AWS Fargate é uma opção poderosa e flexível para a execução de aplicações baseadas em contêineres na AWS, eliminando a necessidade de gerenciar a infraestrutura subjacente e permitindo que os desenvolvedores se concentrem em construir aplicações eficazes e eficientes.
-AWS Service Catalog
-O AWS Service Catalog é um serviço de gerenciamento de serviços que permite que organizações criem e gerenciem catálogos de serviços de TI aprovados para uso na AWS.
+## AWS Service Catalog ##
+O **AWS Service Catalog** é um serviço de gerenciamento de serviços que permite que organizações criem e gerenciem catálogos de serviços de TI aprovados para uso na AWS.
 
 Aqui estão algumas das principais características e funcionalidades do AWS Service Catalog:
 
+**Governança e Controle:** O AWS Service Catalog permite que administradores de TI mantenham um controle firme sobre os serviços da AWS utilizados dentro de suas organizações. Eles podem especificar quais serviços os usuários têm permissão para lançar, implementar controles de custos e garantir que todas as implementações estejam em conformidade com as políticas corporativas.
 
+**Autoatendimento:** Usuários podem navegar pelos catálogos de serviços aprovados e lançar os serviços que precisam por conta própria, sem precisar de assistência direta da equipe de TI.
 
-Governança e Controle: O AWS Service Catalog permite que administradores de TI mantenham um controle firme sobre os serviços da AWS utilizados dentro de suas organizações. Eles podem especificar quais serviços os usuários têm permissão para lançar, implementar controles de custos e garantir que todas as implementações estejam em conformidade com as políticas corporativas.
+**Padronização de Serviços:** O AWS Service Catalog permite criar e gerenciar portfólios de produtos que são aprovados para uso na organização. Isso ajuda a garantir que os serviços lançados pelos usuários estejam de acordo com as melhores práticas e políticas da organização.
 
-Autoatendimento: Usuários podem navegar pelos catálogos de serviços aprovados e lançar os serviços que precisam por conta própria, sem precisar de assistência direta da equipe de TI.
-
-Padronização de Serviços: O AWS Service Catalog permite criar e gerenciar portfólios de produtos que são aprovados para uso na organização. Isso ajuda a garantir que os serviços lançados pelos usuários estejam de acordo com as melhores práticas e políticas da organização.
-
-Integração com Outros Serviços AWS: O AWS Service Catalog se integra com outros serviços AWS, como AWS CloudFormation, AWS Identity and Access Management (IAM), AWS Config, entre outros.
-
+**Integração com Outros Serviços AWS:** O AWS Service Catalog se integra com outros serviços AWS, como AWS CloudFormation, AWS Identity and Access Management (IAM), AWS Config, entre outros.
 Controle de Custo e Orçamento: Ao restringir quais serviços podem ser lançados e como eles são configurados, o AWS Service Catalog pode ajudar as organizações a manterem o controle dos custos e a garantirem que os recursos da AWS são usados de forma eficiente.
 
-Rastreamento e Auditoria: O AWS Service Catalog rastreia o uso de serviços, o que facilita a auditoria e o cumprimento dos requisitos de conformidade.
+**Rastreamento e Auditoria:** O AWS Service Catalog rastreia o uso de serviços, o que facilita a auditoria e o cumprimento dos requisitos de conformidade.
 
 Em suma, o AWS Service Catalog é uma ferramenta valiosa para organizações que precisam manter um controle rigoroso sobre o uso dos serviços da AWS, enquanto permitem que os usuários acessem e lancem os serviços de que precisam de forma autônoma.
 
