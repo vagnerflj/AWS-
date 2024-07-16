@@ -477,3 +477,62 @@ Controle de Custo e Orçamento: Ao restringir quais serviços podem ser lançado
 
 Em suma, o AWS Service Catalog é uma ferramenta valiosa para organizações que precisam manter um controle rigoroso sobre o uso dos serviços da AWS, enquanto permitem que os usuários acessem e lancem os serviços de que precisam de forma autônoma.
 
+
+Leitura Complementar - AWS Athena
+O que é o Amazon Athena?
+
+O Amazon Athena é um serviço de consultas interativas que facilita a análise de dados no Amazon S3 usando SQL padrão. O Athena não usa servidor, de forma que não existe uma infraestrutura para configurar ou gerenciar; é possível começar a analisar os dados imediatamente. Não é necessário nem mesmo carregar dados no Athena, ele trabalha diretamente com os dados armazenados no S3. Para começar, basta fazer login no Athena Management Console, definir seu esquema e dar início às consultas. O Amazon Athena usa o Presto, com suporte completo a SQL padrão, e funciona com diversos formatos de dados padrão, como CSV, JSON, ORC, Apache Parquet e Avro. Apesar de o Amazon Athena ser ideal para queries rápidas ad hoc e se integrar com o Amazon QuickSight para facilidade de visualização, ele também consegue lidar com análise complexa, inclusive grandes junções, funções de janela e arrays.
+
+
+
+O que posso fazer com o Amazon Athena?
+
+O Amazon Athena ajuda você analisar os dados armazenados no Amazon S3. Você pode usar o Athena para rodar queries ad hoc usando SQL padrão ANSI, sem a necessidade de agregar ou carregar os dados no Athena. O Amazon Athena pode processar datasets desestruturados, semi-estruturados e estruturados. Os exemplos incluem formatos de dados CSV, JSON e Avro, além de formatos de dados colunares como Apache Parquet e Apache ORC. O Amazon Athena se integra com o Amazon QuickSight para facilidade de visualização. Você também pode usar o Amazon Athena para gerar relatórios ou explorar dados com ferramentas de inteligência de negócios ou clientes SQL conectados por meio de um driver ODBC ou JDBC.
+
+
+
+Qual é a tecnologia por trás do Amazon Athena?
+
+O Amazon Athena usa o Presto com suporte completo a SQL padrão, e funciona com diversos formatos de dados padrão, como CSV, JSON, ORC, Avro e Parquet. O Athena consegue lidar com análises complexas, inclusive grandes associações, funções de janela e matrizes. Como o Amazon Athena usa o Amazon S3 como datastore subjacente, ele é altamente disponível e durável, com dados armazenados em redundância em vários locais e vários dispositivos em cada local.
+
+
+
+Como faço para começar a usar o Amazon Athena?
+
+Para começar a usar o Amazon Athena, basta fazer login no Console de Gerenciamento da AWS para o Athena e criar seu esquema escrevendo statements DDL no console ou usando um assistente de criação de tabelas. Então, você pode começar a consultar dados usando o editor de queries incorporado. O Athena faz queries dos dados diretamente pelo Amazon S3, para que nenhum carregamento seja necessário.
+
+Leitura Complementar - AWS Macie
+O que é o Amazon Macie?
+
+O Amazon Macie é um serviço de segurança e privacidade de dados totalmente gerenciado que usa machine learning e correspondência de padrões para descobrir e proteger seus dados confidenciais na AWS.
+
+
+
+Quais são os principais benefícios do Amazon Macie?
+
+O Amazon Macie usa machine learning e correspondência de padrões para descobrir dados confidenciais em escala com eficiência de custos. O Macie detecta automaticamente uma lista grande e crescente de tipos de dados confidenciais, incluindo informações pessoalmente identificáveis (PII), como nomes, endereços e números de cartão de crédito. Também oferece visibilidade constante da segurança e privacidade de seus dados armazenados no Amazon S3. É fácil configurar o Macie com um clique no Console de Gerenciamento da AWS ou com uma chamada de API única. O Macie fornece suporte para diversas contas usando o AWS Organizations, para que você possa habilitar o Macie em todas as suas contas com alguns cliques.
+
+
+
+Qual é o custo do Amazon Macie?
+
+Com o Amazon Macie, a cobrança é realizada em duas dimensões, os números de buckets do Amazon S3 na sua conta por mês e a quantidade de dados processados para a descoberta de dados confidenciais em determinado mês. Consulte a página de definição de preço do Amazon Macie, para obter informações de definição de preço atualizadas.
+
+
+
+Há um teste gratuito?
+
+Sim, há um teste gratuito de 30 dias. Cada conta nova do Amazon Macie pode experimentar o serviço por 30 dias sem custo. O teste gratuito inclui 30 dias sem custo de uso do inventário do bucket do Amazon S3 e a avaliação do controle de segurança e acesso no nível do bucket. O console de Gerenciamento da AWS fornece uma estimativa de custo do serviço com base no seu número total de buckets na conta. Se você está em uma configuração de múltiplas contas, a estimativa de custo é acumulada em todas as contas habilitadas, permitindo que você compreenda que seu gasto mensal do Macie total será estimado para cada conta após a fase de teste gratuita terminar. O Amazon Macie também inclui 1 GB de dados processados para descoberta de dados confidenciais por mês sem custo. Essa oferta de nível gratuito não expira e não está vinculada ao período de teste gratuito de 30 dias.
+
+
+
+O Amazon Macie é um serviço regional ou global?
+
+O Amazon Macie é um serviço regional. O Amazon Macie precisa ser habilitado de acordo com cada região e permite que você visualize descobertas em todas as suas contas em cada região. Isso garante que todos os dados analisados sejam baseados em regiões e não cruzem os limites regionais da AWS.
+
+
+
+Como posso começar a usar o Amazon Macie?
+
+O Amazon Macie pode ser habilitado com um clique no Console de Gerenciamento da AWS ou com uma chamada de API única. O Macie fornece suporte para diversas contas usando o AWS Organizations, para que você possa habilitar o Macie em todas as suas contas com alguns cliques.
+
