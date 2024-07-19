@@ -536,3 +536,69 @@ Como posso começar a usar o Amazon Macie?
 
 O Amazon Macie pode ser habilitado com um clique no Console de Gerenciamento da AWS ou com uma chamada de API única. O Macie fornece suporte para diversas contas usando o AWS Organizations, para que você possa habilitar o Macie em todas as suas contas com alguns cliques.
 
+O Amazon AWS Backup é um serviço centralizado para fazer backup e restaurar dados em toda a AWS. Com o AWS Backup, os usuários podem configurar políticas de backup de acordo com seus requisitos de negócios e garantir a conformidade regulatória e de políticas.
+
+Aqui estão algumas das principais características e funcionalidades do Amazon AWS Backup:
+
+
+
+Centralizado e Automatizado: O AWS Backup permite que você centralize e automatize a proteção de dados em vários serviços da AWS, incluindo Amazon EBS, Amazon RDS, Amazon DynamoDB, Amazon EFS, Amazon EC2, AWS Storage Gateway e AWS Fargate.
+
+Políticas de Backup: O serviço permite definir políticas de backup personalizadas, como frequência e retenção de backup, de acordo com suas necessidades e regulamentos de conformidade.
+
+Recuperação: O AWS Backup oferece recuperação de ponto no tempo, o que significa que você pode restaurar seus dados para um ponto específico no tempo.
+
+Segurança e Conformidade: Com o AWS Backup, você pode proteger seus backups com criptografia, gerenciar o acesso de backup com políticas do IAM e auditar suas atividades de backup com AWS CloudTrail.
+
+Monitoramento e Alerta: O AWS Backup se integra com o AWS CloudWatch, oferecendo a capacidade de monitorar métricas de backup e receber alertas.
+
+Gerenciamento de Custo: Com AWS Backup, você paga apenas pelo armazenamento que usa, ajudando a otimizar os custos de armazenamento de backup.
+
+Escalabilidade: O AWS Backup é capaz de lidar com demandas crescentes de backup sem a necessidade de provisionar, configurar e gerenciar infraestrutura adicional.
+
+Em resumo, o Amazon AWS Backup é uma solução eficiente e segura para gerenciar backups e restaurações de vários serviços AWS, proporcionando flexibilidade, automatização e conformidade com políticas.
+
+
+O AWS Disaster Recovery (DR) refere-se ao conjunto de estratégias e procedimentos implementados na plataforma AWS para proteger os dados e os sistemas de TI de uma organização contra desastres. Esses desastres podem ser naturais ou causados pelo homem e podem resultar em perda de dados, interrupção do serviço ou falha do sistema.
+
+As soluções de recuperação de desastres da AWS são projetadas para minimizar o tempo de inatividade e a perda de dados após um desastre, permitindo que as organizações recuperem rapidamente suas operações normais. A AWS oferece vários serviços e recursos que facilitam a implementação de estratégias eficazes de recuperação de desastres, incluindo:
+
+
+
+AWS Backup: um serviço que ajuda a centralizar e automatizar backups em vários serviços da AWS.
+
+Amazon S3: um serviço de armazenamento que pode ser usado para armazenar e recuperar qualquer quantidade de dados a qualquer momento.
+
+Amazon EBS Snapshots: que pode ser usado para fornecer backups pontuais de seus volumes de dados.
+
+Amazon RDS: que suporta backups automatizados de instâncias de banco de dados.
+
+AWS CloudFormation: um serviço que ajuda a modelar e provisionar recursos da AWS.
+
+Amazon Route 53: um serviço de DNS que pode ser usado para rotear o tráfego de usuários para diferentes regiões da AWS.
+
+AWS Direct Connect: um serviço que proporciona uma conexão de rede dedicada do seu local para a AWS.
+
+A escolha da estratégia de recuperação de desastres na AWS (por exemplo, backup e restauração, recuperação de área de trabalho quente, recuperação de área de trabalho fria, recuperação piloto de luz) depende das necessidades específicas de cada organização, incluindo seus objetivos de tempo de recuperação (RTO) e objetivos de ponto de recuperação (RPO).
+
+Em resumo, a AWS oferece uma ampla variedade de ferramentas e serviços que podem ser usados para implementar uma estratégia de recuperação de desastres robusta, ajudando as organizações a proteger seus dados e sistemas críticos contra interrupções imprevistas.
+
+Amazon AWS WorkSpaces é um serviço gerenciado de desktop como serviço (DaaS), que permite provisionar desktops na nuvem para os usuários acessarem a qualquer hora, de qualquer lugar, usando qualquer dispositivo suportado. Este serviço é uma solução virtual de substituição de desktop que ajuda a reduzir os custos operacionais e melhorar a segurança dos dados.
+
+Principais características e benefícios do AWS WorkSpaces incluem:
+
+
+
+Escalabilidade e Flexibilidade: O AWS WorkSpaces permite provisionar o número exato de desktops de que você precisa e escalar para cima ou para baixo conforme as necessidades da sua organização mudam.
+
+Acesso em Qualquer Lugar: Os usuários podem acessar os desktops do WorkSpaces de qualquer lugar usando o cliente de desktop AWS WorkSpaces, que suporta vários tipos de dispositivos, incluindo Windows e MacOS, iPads, tablets Kindle Fire e dispositivos Android.
+
+Segurança: O AWS WorkSpaces ajuda a melhorar a segurança dos dados, uma vez que todos os dados são armazenados na AWS, e não no dispositivo do usuário final. Ele também suporta criptografia de dados e integra-se ao AWS Key Management Service.
+
+Gerenciamento Simplificado: O AWS WorkSpaces elimina a necessidade de provisionar, implantar e gerenciar hardware complexo, proporcionando um ambiente de desktop gerenciado.
+
+Integração: O serviço se integra ao Active Directory, permitindo que os usuários mantenham suas credenciais existentes para acessar seus WorkSpaces.
+
+Custo Efetivo: Com o AWS WorkSpaces, você paga apenas pelo número de WorkSpaces que usa. Não há custos iniciais ou compromissos de longo prazo.
+
+Em resumo, o AWS WorkSpaces é uma solução eficaz e segura para fornecer desktops virtuais que podem ser acessados de qualquer lugar, ajudando as organizações a reduzir os custos operacionais e a melhorar a segurança dos dados.
